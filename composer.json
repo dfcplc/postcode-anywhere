@@ -1,0 +1,19 @@
+{
+	"name": "dfcplc/postcode-anywhere",
+	"description": "",
+	"authors": [
+		{
+			"name": "Matt Clements",
+			"email": "matt.clements@debitfinance.co.uk"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"autoload": {
+		"psr-0": {
+			"Dfcplc\\PostcodeAnywhere": "src/"
+		}
+	},
+	"minimum-stability": "stable"
+}
