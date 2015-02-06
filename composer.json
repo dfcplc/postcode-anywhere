@@ -1,6 +1,10 @@
 {
 	"name": "dfcplc/postcode-anywhere",
-	"description": "",
+	"type": "library",
+	"description": "Postcode Anywhere Composer Package",
+	"keywords": ["postcode","anywhere"],
+	"homepage": "https://github.com/dfcplc/postcode-anywhere",
+	"license": "MIT",
 	"authors": [
 		{
 			"name": "Matt Clements",
