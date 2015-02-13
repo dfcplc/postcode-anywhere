@@ -25,7 +25,7 @@ class Retrieve
 		$file = simplexml_load_file($url);
 
 		//Check for an error, if there is one then throw an exception
-		if ($file->Columns->Column->attributes()->Name == "Error") 
+		if ($file->Columns->Column->attributes()->Name == "Error")
 		{
 			throw new Exception("[ID] " . $file->Rows->Row->attributes()->Error . " [DESCRIPTION] " . $file->Rows->Row->attributes()->Description . " [CAUSE] " . $file->Rows->Row->attributes()->Cause . " [RESOLUTION] " . $file->Rows->Row->attributes()->Resolution);
 		}
