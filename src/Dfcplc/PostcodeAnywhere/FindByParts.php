@@ -14,7 +14,7 @@ class FindByParts
 	private $UserName; //The username associated with the Royal Mail license (not required for click licenses).
 	private $Data; //Holds the results of the query
 
-	function PostcodeAnywhere_Interactive_FindByParts_v1_00($Key, $Organisation, $Building, $Street, $Locality, $Postcode, $UserName)
+	public function __construct($Key, $Organisation, $Building, $Street, $Locality, $Postcode, $UserName)
 	{
 		$this->Key = $Key;
 		$this->Organisation = $Organisation;
@@ -25,7 +25,7 @@ class FindByParts
 		$this->UserName = $UserName;
 	}
 
-	function MakeRequest()
+	public function MakeRequest()
 	{
 		$url = "http://services.postcodeanywhere.co.uk/PostcodeAnywhere/Interactive/FindByParts/v1.00/xmla.ws?";
 		$url .= "&Key=" . urlencode($this->Key);
@@ -55,7 +55,7 @@ class FindByParts
 		}
 	}
 
-	function HasData()
+	public function HasData()
 	{
 		if ( !empty($this->Data) )
 		{
@@ -63,5 +63,4 @@ class FindByParts
 		}
 		return false;
 	}
-
 }
