@@ -1,5 +1,5 @@
 <?php
-namespace Dfcplc\PostcodeAnywhere;
+namespace Dfcplc\PostcodeAnywhere\PostcodeAnywhere;
 
 class Lookup
 {
