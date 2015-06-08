@@ -1,6 +1,8 @@
 <?php
 namespace Dfcplc\PostcodeAnywhere\BankValidation;
 
+use Dfcplc\PostcodeAnywhere\Exception;
+
 class Validate
 {
 
