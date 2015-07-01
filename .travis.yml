@@ -13,4 +13,4 @@ before_script:
 
 script:
   - >
-    ./vendor/bin/parallel-lint
+    ./vendor/bin/parallel-lint .
