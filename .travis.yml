@@ -13,4 +13,4 @@ before_script:
 
 script:
   - >
-    find src/ -name \*.php | php -d display_errors=stderr -l {} > /dev/null \;
+    find src -name \*.php | php -d display_errors=stderr -l {} > /dev/null \;
