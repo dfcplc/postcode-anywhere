@@ -1,6 +1,8 @@
 <?php
 namespace Dfcplc\PostcodeAnywhere\PostcodeAnywhere;
 
+use Dfcplc\PostcodeAnywhere\Exception;
+
 class FindByParts
 {
 	//Credit: Thanks to Stuart Sillitoe (http://stu.so/me) for the original PHP that these samples are based on.
@@ -42,7 +44,7 @@ class FindByParts
 		//Check for an error, if there is one then throw an exception
 		if ($file->Columns->Column->attributes()->Name == "Error")
 		{
-			throw new \Exception("[ID] " . $file->Rows->Row->attributes()->Error . " [DESCRIPTION] " . $file->Rows->Row->attributes()->Description . " [CAUSE] " . $file->Rows->Row->attributes()->Cause . " [RESOLUTION] " . $file->Rows->Row->attributes()->Resolution);
+			throw new Exception("[ID] " . $file->Rows->Row->attributes()->Error . " [DESCRIPTION] " . $file->Rows->Row->attributes()->Description . " [CAUSE] " . $file->Rows->Row->attributes()->Cause . " [RESOLUTION] " . $file->Rows->Row->attributes()->Resolution);
 		}
 
 		//Copy the data
