@@ -18,6 +18,10 @@
 	"require": {
 		"php": ">=5.3.0"
 	},
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "0.*",
+		"jakub-onderka/php-console-highlighter": "0.*"
+	},
 	"autoload": {
 		"psr-0": {
 			"Dfcplc\\PostcodeAnywhere": "src/"
