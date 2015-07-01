@@ -9,6 +9,10 @@
 		{
 			"name": "Matt Clements",
 			"email": "matt.clements@debitfinance.co.uk"
+		},
+		{
+			"name": "Ciaran Moore",
+			"email": "ciaran.moore@debitfinance.co.uk"
 		}
 	],
 	"require": {
