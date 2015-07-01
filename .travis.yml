@@ -13,4 +13,4 @@ before_script:
 
 script:
   - >
-    find typo3/ -name \*.php | parallel --gnu php -d display_errors=stderr -l {} > /dev/null \;
+    find src/ -name \*.php | php -d display_errors=stderr -l {} > /dev/null \;
