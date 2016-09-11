@@ -3,7 +3,7 @@ namespace Dfcplc\PostcodeAnywhere\PostcodeAnywhere;
 
 use Dfcplc\PostcodeAnywhere\Exception;
 
-class Lookup
+class Find
 {
 	private $Key; //The key to use to authenticate to the service.
 	private $SearchTerm; //The search term to find. If the LastId is provided, the SearchTerm searches within the results from the LastId.
